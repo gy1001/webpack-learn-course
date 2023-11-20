@@ -3,5 +3,8 @@
   "packageManager": "yarn@4.0.1",
   "scripts": {
     "debug": "node ./debugger.js --mode=development --NODE_ENV=development"
+  },
+  "devDependencies": {
+    "tapable": "^2.2.1"
   }
 }

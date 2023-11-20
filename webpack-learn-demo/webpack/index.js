@@ -1,3 +1,5 @@
+const Compiler = require("./compiler");
+
 function webpack(options) {
   const argvs = process.argv.slice(2);
   const shellConfig = argvs.reduce((prev, current) => {
@@ -6,6 +8,11 @@ function webpack(options) {
     return prev;
   }, {});
   const finalConfig = Object.assign({}, options, shellConfig);
-  console.log(finalConfig);
+  const plugins = finalConfig.plugins || [];
+  const compiler = new Compiler(finalConfig);
+  plugins.forEach((plugin) => {
+    plugin.apply(compiler);
+  });
+  return compiler;
 }
 module.exports = webpack;

@@ -5,8 +5,17 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"tapable@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "tapable@npm:2.2.1"
+  checksum: bc40e6efe1e554d075469cedaba69a30eeb373552aaf41caeaaa45bf56ffacc2674261b106245bd566b35d8f3329b52d838e851ee0a852120acae26e622925c9
+  languageName: node
+  linkType: hard
+
 "webpack-learn-demo@workspace:.":
   version: 0.0.0-use.local
   resolution: "webpack-learn-demo@workspace:."
+  dependencies:
+    tapable: "npm:^2.2.1"
   languageName: unknown
   linkType: soft
