@@ -19,6 +19,8 @@
 
 ## 02-commit: feat: webpack-执行插件的 apply 方法
 
+> 增加依赖 tapable 库
+
 用第一步得到的最终参数进行初始化 Compiler 对象，并加载配置文件中中的参数，执行各个插件的 apply 方法，返回 compiler 方法
 
 执行 compiler 的 run 方法，触发响应的钩子函数，并开始编译
