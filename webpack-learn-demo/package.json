@@ -1,0 +1,7 @@
+{
+  "name": "webpack-learn-demo",
+  "packageManager": "yarn@4.0.1",
+  "scripts": {
+    "debug": "node ./debugger.js --mode=development --NODE_ENV=development"
+  }
+}
